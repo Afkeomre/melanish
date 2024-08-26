@@ -1,0 +1,21 @@
+/* Base */
+@import 'base/reset';
+@import 'base/fonts';
+@import 'base/vars';
+@import 'base/mixins';
+@import 'base/base';
+@import 'base/utils';
+@import 'base/wrapper';
+@import 'base/container';
+
+/* Blocks */
+@import 'blocks/preloader.scss';
+@import 'blocks/header.scss';
+@import 'blocks/hero.scss';
+@import 'blocks/info.scss';
+@import 'blocks/gallery-horizontal.scss';
+@import 'blocks/gallery-vertical.scss';
+@import 'blocks/slides.scss';
+@import 'blocks/next.scss';
+@import 'blocks/burger.scss';
+@import 'blocks/mobile-nav.scss';

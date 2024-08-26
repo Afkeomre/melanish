@@ -1,0 +1,54 @@
+.burger {
+	position: relative;
+	z-index: 9;
+	height: 20px;
+	width: 50px;
+	display: none;
+
+	@include tablet() {
+		display: block;
+	}
+
+	&__icon {
+		position: relative;
+		width: 100%;
+		height: 2px;
+		background-color: var(--text-color);
+		transition: all 0.2s ease-in;
+
+		&::before,
+		&::after {
+			content: "";
+			display: block;
+			position: absolute;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			background-color: var(--text-color);
+		}
+
+		&::before {
+			bottom: 8px;
+			transition: all 0.2s ease-in;
+		}
+
+		&::after {
+			top: 8px;
+			transition: all 0.2s ease-in;
+		}
+
+		&_active {
+			background: transparent;
+
+			&::before {
+				bottom: 0;
+				transform: rotate(-45deg);
+			}
+
+			&::after {
+				top: 0;
+				transform: rotate(45deg);
+			}
+		}
+	}
+}

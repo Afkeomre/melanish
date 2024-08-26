@@ -1,0 +1,293 @@
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 99;
+	overflow: hidden;
+	background-color: #fff;
+
+	@include tablet() {
+		background-color: var(--page-bg);
+	}
+
+	&__left,
+	&__right {
+		position: absolute;
+		width: 50%;
+		height: 100%;
+		z-index: 9;
+		transition: all 2s ease-in;
+
+		@include tablet () {
+			display: none;
+		}
+	}
+
+	&__left {
+		top: -100%;
+		left: 0;
+		background-color: #100102;
+	}
+
+	&__right {
+		top: 100%;
+		right: 0;
+		background-color: #bec2cb;
+	}
+
+	&__img {
+		position: absolute;
+		top: 50%;
+		left: 100%;
+		transform: translate(0, -50%);
+		z-index: 99;
+		width: 60%;
+		height: auto;
+		
+		@include tablet() {
+			width: 100%;
+			height: 100%;
+			left: 0;
+			opacity: 0;
+			transition: all 2s ease-in-out;
+		}
+
+		img {
+			@include tablet() {
+				object-fit: cover;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+
+	&__text {
+		position: absolute;
+		top: 50%;
+		right: 8%;
+		transform: translate(0, -50%);
+		z-index: 99;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		font-family: var(--second-family-medium);
+		text-align: center;
+		color: #000;
+		text-transform: uppercase;
+
+		@include laptop() {
+			right: 5%;
+		}
+
+		@include tablet() {
+			top: 65%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: var(--text-color);
+		}
+
+		@include mobile() {
+			width: 100%;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: -100%;
+			right: 50%;
+			transform: translate(50%, 0);
+			width: 80%;
+			height: 0;
+			opacity: 0;
+			z-index: -1;
+			background-color: #fff;
+			transition: all 2s ease-in-out;
+			transition-delay: 2s;
+
+			@include tablet() {
+				display: none;
+			}
+		}
+	}
+
+	&__title {
+		font-size: 68px;
+		margin-bottom: 15px;
+		transform: scale(.9);
+		opacity: 0;
+		transition: all 2s ease-in-out;
+		transition-delay: 3s;
+
+		@include laptop() {
+			font-size: 60px;
+		}
+
+		@include mobile() {
+			font-size: 50px;
+			margin-bottom: 10px;
+		}
+	}
+
+	&__description {
+		font-size: 14px;
+		transform: translateY(20px);
+		opacity: 0;
+		transition: opacity 2.3s ease-in-out, transform 1s ease-out;
+		transition-delay: 3.5s;
+		
+		@include mobile() {
+			font-size: 12px;
+		}
+	}
+}
+
+.preloader-animation {
+	.preloader {
+
+		&__left,
+		&__right {
+			top: 0;
+		}
+
+		&__img {
+			animation-name: slide-to-left;
+			animation-duration: 3s;
+			animation-fill-mode: forwards;
+			animation-timing-function: ease-out;
+			animation-delay: 1s;
+
+			@include tablet() {
+				animation-name: fade-in;
+				animation-duration: 4s;
+				animation-fill-mode: forwards;
+				animation-timing-function: linear;
+				animation-delay: 0;
+			}
+		}
+
+		&__text {
+			&::before {
+				height: 140%;
+				top: 50%;
+				opacity: 1;
+				transform: translate(50%, -50%);
+			}
+		}
+
+		&__title {
+			transform: scale(1);
+			opacity: 1;
+		}
+
+		&__description {
+			transform: translateY(0);
+			opacity: .8;
+		}
+	}
+}
+
+.preloader-hidden {
+	.preloader {
+		&__left,
+		&__right {
+			transition-delay: .8s;
+		}
+
+		&__img {
+			left: 3%;
+			animation-name: slide-to-right;
+			animation-duration: 3s;
+			animation-fill-mode: forwards;
+			animation-timing-function: ease-in-out;
+			animation-delay: .8s;
+
+			@include tablet() {
+				opacity: .5;
+				left: 0;
+				animation-name: fade-out;
+				animation-duration: 2.8s;
+				animation-fill-mode: forwards;
+				animation-timing-function: ease-in-out;
+				animation-delay: 0;
+			}
+		}
+
+		&__text {
+			&::before {
+				transition: all 2s ease-in-out;
+				transition-delay: 0;
+				top: -140%;
+			}
+		}
+
+		&__title {
+			transition: transform 3s ease-out, opacity .6s ease-out;
+			transition-delay: .2s;
+			transform: translateY(-150px) scale(1);
+
+			@include tablet() {
+				transition: transform 3s ease-out, opacity .6s ease-out;
+				transition-delay: 2s;
+				transform: translateY(150px) scale(1);
+			}
+		}
+
+		&__description {
+			transition: transform 2s ease-out, opacity .6s ease-out;
+			transition-delay: .3s;
+			transform: translateY(-150px);
+
+			@include tablet() {
+				transition: transform 3s ease-out, opacity .6s ease-out;
+				transition-delay: 1.8s;
+				transform: translateY(150px);
+			}
+		}
+	}
+}
+
+.preloader-none {
+	opacity: 0;
+	visibility: hidden;
+	transition: all 1s ease-in-out;
+}
+
+@keyframes slide-to-left {
+	50% {
+		left: -7%;
+	}
+	100% {
+		left: 3%;
+	}
+}
+
+@keyframes slide-to-right {
+	50% {
+		left: -7%;
+	}
+	100% {
+		left: 100%;
+	}
+}
+
+@keyframes fade-in {
+	50% {
+		transform: translate(0, -50%) scale(1.05);
+	}
+	80% {
+		opacity: .8;
+	}
+	100% {
+		opacity: .5;
+		transform: translate(0, -50%) scale(1);
+	}
+}
+
+@keyframes fade-out {
+	100% {
+		opacity: 0;
+	}
+}

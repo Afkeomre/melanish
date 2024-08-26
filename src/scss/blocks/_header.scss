@@ -1,0 +1,52 @@
+.header {
+	margin-bottom: 181px;
+
+	@include tablet-mobile() {
+		margin-bottom: 120px;
+	}
+
+	@include mobile() {
+		margin-bottom: 100px;
+	}
+
+	&__content {
+		padding: 53px 15px;
+	}
+
+	&__nav {
+		@include tablet() {
+			display: none;
+		}
+	}
+
+	&__nav-list {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 20px;
+		text-transform: uppercase;
+		font-family: var(--second-family-medium);
+		font-size: 18px;
+	}
+
+	&__mobile-view {
+		display: none;
+
+		@include tablet () {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 70px;
+		}
+
+		img {
+			@include tablet-mobile() {
+				width: 80%;
+			}
+
+			@include tablet-mobile() {
+				width: 60%;
+			}
+		}
+	}
+}
