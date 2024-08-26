@@ -2,8 +2,8 @@
 	margin-bottom: 91px;
 
 	@include mobile() {
-		height: calc(90vh - 120px - 126px); 
-		margin-bottom: 30px;
+		height: calc(100vh - 120px - 126px); 
+		margin-bottom: 0;
 	}
 
 	&__content {
