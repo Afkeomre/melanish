@@ -1,6 +1,11 @@
 .hero {
 	margin-bottom: 91px;
 
+	@include mobile() {
+		height: calc(100vh - 100px - 126px); 
+		margin-bottom: 30px;
+	}
+
 	&__content {
 		display: flex;
 		flex-direction: column;
