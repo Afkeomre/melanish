@@ -9,8 +9,8 @@
 		margin-bottom: 150px;
 	}
 
-	@include mobile() {
-		margin-bottom: 80px;
+	@include tablet-mobile() {
+		margin-bottom: 110px;
 	}
 
 	&__content {
@@ -58,6 +58,10 @@
 			text-stroke: none;
 			text-shadow: 0 0 14px rgb(255, 255, 255, 0.7);
 			transition: all 0.5s ease-in-out;
+
+			@include mobile() {
+				text-shadow: 0 0 8px rgb(255, 255, 255, 0.7);
+			}
 		}
 	}
 
