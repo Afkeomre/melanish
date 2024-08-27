@@ -2,10 +2,6 @@
 	position: relative;
 	padding: 181px 0;
 
-	@include tablet() {
-		padding: 150px 0;
-	}
-
 	&__title {
 		position: absolute;
 		top: 50%;
@@ -39,6 +35,10 @@
 
 	&__img {
 		min-width: 30%;
+
+		@include mobile() {
+			min-width: 38%;
+		}
 
 		&:first-child {
 			position: relative;

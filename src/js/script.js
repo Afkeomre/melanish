@@ -11,12 +11,14 @@ import verticalAnimation from './modules/vertical-animation';
 import nextAnimation from './modules/next-animation';
 import slider from './modules/slider';
 
-preloaderAnimation();
-mobileNav();
-headerAnimation();
-heroAnimation();
-infoAnimation();
-horizontalAnimation();
-verticalAnimation();
-nextAnimation();
-slider();
+window.addEventListener('DOMContentLoaded', () => {
+  preloaderAnimation();
+  mobileNav();
+  headerAnimation();
+  heroAnimation();
+  infoAnimation();
+  horizontalAnimation();
+  verticalAnimation();
+  nextAnimation();
+  slider();
+});
