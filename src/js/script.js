@@ -11,7 +11,7 @@ import verticalAnimation from './modules/vertical-animation';
 import nextAnimation from './modules/next-animation';
 import slider from './modules/slider';
 
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', () => {
   preloaderAnimation();
   mobileNav();
   headerAnimation();
