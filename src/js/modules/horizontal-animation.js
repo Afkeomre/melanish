@@ -36,15 +36,15 @@ const horizontalAnimation = () => {
     xPercent: 150,
   });
 
-  // gsap.from(':root', {
-  //   scrollTrigger: {
-  //     trigger: '.gallery-horizontal__img:nth-child(2)',
-  //     start: 'top center',
-  //     scrub: 6,
-  //   },
-  //   '--back-opacity': 0,
-  //   duration: 2,
-  // });
+  gsap.from(':root', {
+    scrollTrigger: {
+      trigger: '.gallery-horizontal__img:nth-child(2)',
+      start: 'top center',
+      scrub: 6,
+    },
+    '--back-opacity': 0,
+    duration: 2,
+  });
 };
 
 export default horizontalAnimation;
