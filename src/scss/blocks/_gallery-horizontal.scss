@@ -29,7 +29,7 @@
 			z-index: -1;
 			font-size: 220px;
 			color: #8d8d8d;
-			opacity: var(--opacity);
+			// opacity: var(--back-opacity);
 
 			@include tablet-mobile() {
 				font-size: 120px;
