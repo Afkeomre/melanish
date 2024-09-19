@@ -54,5 +54,5 @@ To create a production-ready build, run:
 
 ## 📧 Contact
 If you have any questions or suggestions, feel free to reach out:
-- E-mail: ivoronkova538@yandex.ru.
+- Email: ivoronkova538@yandex.ru.
 - GitHub: [Irina Voronkova](https://github.com/Afkeomre).
