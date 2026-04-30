@@ -1,58 +1,54 @@
-# 📷 Melanish Photo Project
-Melanish is a photo project website built with an emphasis on animation and responsive design. The project demonstrates the use of modern web technologies such as Webpack, SCSS, and JavaScript for creating a smooth and engaging user experience.
+# 📷 Фотопроект Melanish
+Melanish - это веб-сайт для фотопроектов, созданный с акцентом на анимацию и адаптивный дизайн. Проект обеспечивает формирование позитивного пользовательского опыта благодаря использованию таких веб-технологий, как SCSS, JavaScript и Webpack.
 
-## 🌐 Website
-You can watch the website [here](https://melanish-liart.vercel.app/).
+## 🌐 Веб-сайт
+Вы можете посмотреть веб-сайт [здесь](https://melanish-liart.vercel.app/).
 
-## ✔️ Features
- - **Animations**:
-   - Custom preloader animation created with SCSS (compiled to CSS).
-   - Site animations powered by the [GSAP (GreenSock Animation Platform)](https://gsap.com/).
- - **Responsive Design**:
-   - Fully responsive with a burger menu for mobile navigation.
- - **Slider**:
-   - Built with vanilla JavaScript.
-   - Features include navigation by clicking "next" or "previous" elements, keyboard arrow navigation, and mouse wheel control.
-   - On mobile, supports swipe gestures and tap navigation.
+## ✔️ Особенности
+ - **Анимация**:
+   - Пользовательская анимация предзагрузки, созданная с помощью SCSS.
+   - Анимация сайта на базе [GSAP (GreenSock Animation Platform)](https://gsap.com/).
+ - **Адаптивный дизайн**
+ - **Слайдер**:
+   - Создан на JavaScript.
+   - Варианты управления: клик по элементу "следующий" или "предыдущий", клавиши со стрелками, колесико мыши.
+   - На мобильных устройствах поддерживаются свайпы и тапы.
   
-## 🛠️ Technologies 
- - **Webpack**: Used for bundling and building the project.
- - **SCSS**: For styling, with CSS animations written in SCSS.
- - **GSAP**: For advanced animations across the website.
- - **JavaScript**: Custom slider, burger menu, and animation control.
+## 🛠️ Технологии  
+ - **Webpack**: используется для сборки проекта.
+ - **SCSS**: для стилизации и простой анимации.
+ - **GSAP**: для продвинутой анимации.
+ - **JavaScript**: слайдер, бургер-меню и управление анимацией.
 
-## ⚙️ Installation
-1. Clone the repository:
+## ⚙️ Установка
+1. Клонируйте репозиторий:
    ```bash
    git clone https://github.com/Afkeomre/melanish.git
 
-2. Navigate to the project folder:
+2. Перейдите к папке проекта:
    ```bash
    cd melanish
 
-3. Install dependencies:
+3. Установите зависимости:
    ```bash
    npm install
 
-### Running the Development Server
-To start the development server, run:
+### Запуск сервера разработки
    ```bash
    npm start
    ```
 
-### Building for Development 
-To create a development build, run:
+### Сборка для разработки 
    ```bash
    npm run build:dev
    ```
 
-### Building for Production
-To create a production-ready build, run:
+### Сборка для продакшена
    ```bash
    npm run build:prod
    ```
 
-## 📧 Contact
-If you have any questions or suggestions, feel free to reach out:
+## 📧 Контакты
+Если у вас есть какие-либо вопросы или предложения, свяжитесь со мной:
 - Email: ivoronkova538@yandex.ru.
 - GitHub: [Irina Voronkova](https://github.com/Afkeomre).
