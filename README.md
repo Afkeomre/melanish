@@ -1,37 +1,40 @@
 # 📷 Фотопроект Melanish
-Melanish - это веб-сайт для фотопроектов, созданный с акцентом на анимацию и адаптивный дизайн. Проект обеспечивает формирование позитивного пользовательского опыта благодаря использованию таких веб-технологий, как SCSS, JavaScript и Webpack.
+Веб-сайт фотопроекта с акцентом на анимации и адаптивный интерфейс.
 
-## 🌐 Веб-сайт
+## 🛠️ Стек технологий
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
+![GSAP](https://img.shields.io/badge/GSAP-%2388CE02.svg?style=for-the-badge&logo=greensock&logoColor=black)
+![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
+
+## 🌐 Демо
 Вы можете посмотреть веб-сайт [здесь](https://melanish-liart.vercel.app/).
 
 ## ✔️ Особенности
  - **Анимация**:
-   - Пользовательская анимация предзагрузки, созданная с помощью SCSS.
-   - Анимация сайта на базе [GSAP (GreenSock Animation Platform)](https://gsap.com/).
+   - Анимация предзагрузки, созданная с помощью SCSS.
+   - Анимации пользовательского интерфейса на базе [GSAP (GreenSock Animation Platform)](https://gsap.com/).
  - **Адаптивный дизайн**
  - **Слайдер**:
    - Создан на JavaScript.
    - Варианты управления: клик по элементу "следующий" или "предыдущий", клавиши со стрелками, колесико мыши.
    - На мобильных устройствах поддерживаются свайпы и тапы.
-  
-## 🛠️ Технологии  
- - **Webpack**: используется для сборки проекта.
- - **SCSS**: для стилизации и простой анимации.
- - **GSAP**: для продвинутой анимации.
- - **JavaScript**: слайдер, бургер-меню и управление анимацией.
 
 ## ⚙️ Установка
-1. Клонируйте репозиторий:
+### Клонирование репозитория
    ```bash
    git clone https://github.com/Afkeomre/melanish.git
+   ```
 
-2. Перейдите к папке проекта:
+### Переход к папке проекта
    ```bash
    cd melanish
+   ```
 
-3. Установите зависимости:
+### Установка зависимостей
    ```bash
    npm install
+   ```
 
 ### Запуск сервера разработки
    ```bash
